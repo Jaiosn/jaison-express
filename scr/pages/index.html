@@ -1,175 +1,211 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>My first web page</title>
+    <title>Jovian Careers | Powered by Bootstrap</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn about job openings at Jovian and submit your application now"
+    />
+    <meta property="og:title" content="Jovian Careers" />
+    <meta
+      property="og:description"
+      content="Learn about job openings at Jovian and submit your application now"
+    />
+    <meta property="og:image" content="/jovian_meta.png" />
+    <link rel="icon" href="/jovian_favicon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <div id="navbar">
-      <img
-        id="logo-text"
-        src="https://bookface-images.s3.amazonaws.com/logos/9c630503bfaf09e017d40c97dae09e6521a73c2d.png"
-        alt="logo"
-      />
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-md shadow-sm">
+      <div class="container-lg px-4">
+        <a class="navbar-brand" href="/">
+          <img
+            id="logo"
+            alt="Jovian Logo"
+            src="https://i.imgur.com/JRA5Q8a.png"
+            height="30"
+            class="d-md-none"
+          />
+          <img
+            id="logo-with-text"
+            alt="Jovian Logo"
+            src="https://i.imgur.com/m1wXjqw.png"
+            height="30"
+            class="d-none d-md-inline"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <img id="logo"
-      src="logo.png"
-      alt="logo"/>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                target="_blank"
+                href="https://jovian.com/learn"
+              >
+                Courses
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://jovian.com/learn"
+                target="_blank"
+              >
+                Programs
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://youtube.com/@jovianhq"
+                target="_blank"
+              >
+                YouTube
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-primary ms-md-2"
+                href="https://jovian.com/login"
+                role="button"
+                target="_blank"
+              >
+                Sign In
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--ABOUT SECTION-->
+    <div class="container px-4">
+      <div class="row flex-lg-row-reverse align-items-center g-4 py-4">
+        <div class="col-12 col-lg-6">
+          <img
+            src="https://i.imgur.com/sxbxff5.jpg"
+            class="d-block mx-lg-auto img-fluid rounded"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1
+            class="display-4 fw-bold text-body-emphasis lh-1 mb-3 text-center d-lg-none"
+          >
+            Work at Jovian
+          </h1>
+          <h1
+            class="display-5 fw-bold text-body-emphasis lh-1 mb-3 d-none d-lg-block"
+          >
+            Work at Jovian
+          </h1>
+          <p class="lead">
+            At Jovian, we're on a mission to build the world's most highly
+            reputed technical university, and we're building it completely
+            online. We offer several beginner friendly courses that are taken by
+            300,000+ registered users.
+          </p>
+          <p class="lead">We also offer 2 industry-focused bootcamps:</p>
+          <ol class="lead">
+            <li>
+              <a href="https://www.jovian.com/full-stack-developer-bootcamp">
+                Jovian Full Stack Developer Bootcamp
+              </a>
+            </li>
+            <li>
+              <a href="https://www.jovian.com/data-science-bootcamp">
+                Jovian Data Science Bootcamp
+              </a>
+            </li>
+          </ol>
+        </div>
+      </div>
     </div>
-    <div id="banner-p"><img id="banner" src="img/banner.jpg" alt="banner" height="300" /></div>
-    <h1>About jovin</h1>
-    <div id="about">
-      <div id="desc">
-        <p style="margin: 0">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt sed
-          autem nesciunttempore similique ab labore, voluptatem praesentium
-          natus obcaecati veritatis dolore odio, possimus sequi fugiat incidunt
-          perferendis optio. Culpa.
+    
+    <!--FOOTER-->
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-top pt-3 mb-3">
+          <li class="nav-item">
+            <a
+              href="https://jovian.com/learn"
+              class="nav-link px-2 text-body-secondary"
+              target="_blank"
+            >
+              Courses
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://jovian.com/learn"
+              class="nav-link px-2 text-body-secondary"
+              target="_blank"
+            >
+              Programs
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://youtube.com/@jovianhq"
+              class="nav-link px-2 text-body-secondary"
+              target="_blank"
+            >
+              YouTube
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://jovian.com/login"
+              class="nav-link px-2 text-body-secondary"
+              target="_blank"
+            >
+              Sign In
+            </a>
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">
+          © 2023 Jovian (SwiftAce Inc.)
         </p>
-        <p>We offer two industry bootcamps exclusvely:</p>
-        <div></div>
-        <ol>
-          <a href="#">
-            <li>Front-end bootcamp</li>
-          </a>
-          <a href="">
-            <li>Data scientst bootcamp</li>
-          </a>
-        </ol>
-      </div>
-      <div id="team">
-        <img class="team-img" src="img/team.jpg" alt="team" height="200" />
-      </div>
+      </footer>
     </div>
 
-    <h2>Job Opportunity</h2>
 
-    <div id="jobsec">
-      <table id="job-table">
-        <tr id="job-title">
-          <th rowspan="2">Job titles</th>
-          <th colspan="2">Location</th>
-          <th rowspan="2">Salary</th>
-          <th rowspan="2">Posted on</th>
-        </tr>
-        <tr id="job-title">
-          <th>city</th>
-          <th>country</th>
-        </tr>
-
-        <tr id="jobs">
-          <td>Front-end</td>
-          <td>Banglore</td>
-          <td>india</td>
-          <td>$120k</td>
-          <td>mar 2,2023</td>
-        </tr>
-        <tr id="jobs">
-          <td>Back-end</td>
-          <td>Delhi</td>
-          <td>india</td>
-          <td>$150k</td>
-          <td>june 23,2023</td>
-        </tr>
-        <tr id="jobs">
-          <td>Full Stack developer</td>
-          <td>Banglore</td>
-          <td>india</td>
-          <td>$190k</td>
-          <td>may 22,2023</td>
-        </tr>
-        <tr id="jobs">
-          <td>Data scientst</td>
-          <td colspan="2">Remote</td>
-          <td>$160k</td>
-          <td>aprl 5,2023</td>
-        </tr>
-      </table>
-    </div>
-
-    <div id="form">
-      <h3>Application form</h3>
-      <form>
-        <div id="form-data">
-          <label for="name">Name:</label><br />
-          <input type="text" name="User name" id="name" required />
-        </div>
-        <div id="form-data">
-          <label for="email">Email:</label><br />
-          <input type="text" name="email" id="email" required />
-        </div>
-        <div id="form-data">
-          <label for="Phone number">Phone:</label><br />
-          <input
-            type="number"
-            name="ph number"
-            id="Phone num"
-            placeholder="+00243464545"
-            required
-          />
-        </div>
-        <div id="form-data">
-          <label for="dob">Date of birth: </label><br />
-          <input type="date" name="dob" id="dob" required />
-        </div>
-
-        <div id="form-data">
-          <label for="job">Apply Job positon:</label><br />
-          <select>
-            <option value="select">Select option</option>
-            <option value="Front-end">Front-end</option>
-            <option value="Back-end">Back-end</option>
-            <option value="Full Stack developer">Full Stack developer</option>
-            <option value="Data scientst">Data scientst</option>
-          </select>
-        </div>
-
-        <div id="form-data">
-          <label for="file">Choose file:</label><br />
-          <input
-            type="file"
-            name="file"
-            id="file"
-            accept=".pdf,.doc,docx"
-            required
-          />
-        </div>
-        <div id="form-data">
-          <label for="cover">Cover letter:</label><br />
-          <textarea
-            name="cover"
-            id="cover"
-            rows="5"
-            placeholder="Decribe what makes you suitable for this job"
-          ></textarea>
-        </div>
-        <div id="form-data">
-          <label  id="check"  for="check"> </label>
-
-          <input type="checkbox" name="checkbox" id="check" required />I agree
-          to the terms and contions
-        </div>
-        <div id="submit">
-          <input type="submit" name="submit" id="sub" />
-        </div>
-      </form>
-    </div>
-
-    <div id="footer">
-      <ul id="footer-links">
-        <li>
-          <a href="https://jovian.com" target="_blank"> course </a>
-        </li>
-        <li><a href="http://youtube.com" target="_blank">youtube </a></li>
-        <li>programs</li>
-      </ul>
-      <div id="copy">Copyright &copy; 2024</div>
-    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
